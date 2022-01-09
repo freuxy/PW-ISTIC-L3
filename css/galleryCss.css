@@ -1,0 +1,13 @@
+#photosContent{
+    width: 800px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+
+}
+#photosContent img{
+    transition: all 0.6s;
+}
+#photosContent img:hover{
+    transform: scale(1.2);
+}

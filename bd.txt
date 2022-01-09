@@ -1,0 +1,72 @@
+DROP TABLE admin;
+CREATE TABLE `admin` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(10) NOT NULL ,
+  `mdp` VARCHAR(10) NOT NULL ,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+)
+INSERT INTO admin(username,mdp) VALUES("Sonia","123");
+INSERT INTO admin(username,mdp) VALUES("Bob","456");
+SELECT * FROM admin;
+
+DROP TABLE evenement;
+CREATE TABLE `evenement` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `titre` VARCHAR(1000) NOT NULL,
+  `dateDebutEvenement` DATE DEFAULT NULL,
+  `dateFinEvenement` DATE DEFAULT NULL,
+  `ville` VARCHAR(10) DEFAULT NULL,
+  `contenu` TEXT DEFAULT NULL,
+  `posteur` BLOB,
+  `contact` VARCHAR(1000) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
+INSERT INTO evenement(titre,dateDebutEvenement,dateFinEvenement,ville,contenu,posteur,contact)
+		VALUES("ANOMIC","2021-12-01","2021-12-31","Lyon","ADN et Anomic Elements",
+		"1ANOMIC.jpg","https://www.facebook.com/arcoirisAE/");
+INSERT INTO evenement(titre,dateDebutEvenement,dateFinEvenement,ville,contenu,posteur,contact)
+		VALUES("Triangle","2021-12-01","2021-12-31","Lyon","ADN et Anomic Elements",
+		"2Triangle.jpg","https://www.facebook.com/events/156667776227747/?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D");
+
+SELECT * FROM evenement;
+
+DROP TABLE artiste;
+CREATE TABLE `artiste` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `nom` VARCHAR(20) DEFAULT NULL,
+  `type_artiste` VARCHAR(100) DEFAULT NULL,
+  `intro` VARCHAR(255) DEFAULT NULL,
+  `contact` VARCHAR(255) DEFAULT NULL,
+  `profile_artiste` BLOB,
+  PRIMARY KEY (`id`)
+)
+
+INSERT INTO artiste(nom,type_artiste,intro,contact,profile_artiste) VALUES("Sonia","Designer","intro","https://www.facebook.com","1Sonia.jpg");
+
+SELECT * FROM artiste;
+
+
+DROP TABLE artiste_oeuvre;
+CREATE TABLE `artiste_oeuvre` (
+	id INT(11) NOT NULL AUTO_INCREMENT,
+	lien_oeuvre VARCHAR(1000) DEFAULT NULL,
+	artiste_id INT,
+	PRIMARY KEY (id)
+)
+ALTER TABLE artiste_oeuvre ADD CONSTRAINT artiste_id FOREIGN KEY (artiste_id) REFERENCES artiste(id);
+SELECT * FROM artiste_oeuvre;
+
+DROP TABLE gallery;
+CREATE TABLE `gallery` (
+	id INT(11) NOT NULL AUTO_INCREMENT,
+	titrePhoto VARCHAR(1000) NOT NULL,
+	photo BLOB,
+	PRIMARY KEY (id)
+)
+INSERT INTO gallery(titrePhoto,photo) VALUES("aa","1aa.jpg");
+INSERT INTO gallery(titrePhoto,photo) VALUES("bb","2bb.jpg");
+INSERT INTO gallery(titrePhoto,photo) VALUES("cc","3cc.jpg");
+INSERT INTO gallery(titrePhoto,photo) VALUES("dd","4dd.jpg");
+INSERT INTO gallery(titrePhoto,photo) VALUES("ee","5ee.jpg");
+SELECT * FROM gallery;

@@ -1,0 +1,12 @@
+h2{
+
+    height:50px;
+}
+.artisteContainer{
+
+    width: 800px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+
+}
