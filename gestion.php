@@ -16,6 +16,7 @@ noMagicQuotes();
     <link rel='stylesheet' href='css/gestion/gestionCSS.css'>
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css'>
     <link rel="stylesheet" href="css/gestion/styleGestion.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script type="text/javascript" src="js/custom/utils.js"></script>
     <script>
         function cliquerMenu(indexMenu) {
@@ -127,7 +128,7 @@ noMagicQuotes();
                                     </li>
                                     <li class="menu-item">
                                         <a href="#"  onclick="cliquerMenu(6)">
-                                            <span class="menu-title"">Ajouter une événement</span>
+                                            <span class="menu-title">Ajouter une événement</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -160,7 +161,7 @@ noMagicQuotes();
                     </ul>
                 </nav>
             </div>
-            <div class="sidebar-footer"><span>Sidebar footer</span></div>
+            <!-- <div class="sidebar-footer"><span>Sidebar footer</span></div> -->
         </div>
     </aside>
     <div id="overlay" class="overlay"></div>
@@ -183,7 +184,7 @@ noMagicQuotes();
 
         </header>
         <main class="content">
-            <h1>Système de gestion</h1>
+            
 
             <iframe id="contenu" src="" height="80%"></iframe>
 

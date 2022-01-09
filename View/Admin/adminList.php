@@ -8,6 +8,7 @@ session_start();
     <title>login</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="text/javascript" src="../../js/custom/admins.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         //
         window.onload = function() {
@@ -16,13 +17,13 @@ session_start();
     </script>
 
 </head>
-<body>
+<body class="p-8" > 
 
-<h1>List des admins</h1>
+<h1 class="md:font-bold mb-8">List des admins</h1>
 <div id="lareponse"></div>
 <div id="admins" class="container">
     <div>
-        <div class="col" id="listeAdmins"></div>
+        <div class="col mb-8" id="listeAdmins"></div>
     </div>
 </div>
 
