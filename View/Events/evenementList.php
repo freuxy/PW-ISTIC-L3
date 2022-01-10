@@ -11,6 +11,7 @@ noMagicQuotes();
 <head>
     <title>login</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/css">
         .afficherMode input{
             display: none;
@@ -38,9 +39,9 @@ noMagicQuotes();
     </script>
 
 </head>
-<body>
+<body class="p-8">
 
-<h1>List des évenements</h1>
+<h1 class="md:font-bold mb-8">Liste des évenements</h1>
 <div id="lareponse"></div>
 <div id="evenement" class="container">
     <div>

@@ -16,7 +16,7 @@ function supprimerAdmin(id){
     req.onreadystatechange = function() {
         if(req.readyState == 4) {
             if(req.status == 200) {
-                document.getElementById('lareponse').innerHTML="réssuir de supprimer";
+                document.getElementById('lareponse').innerHTML="Suppression réussie ";
                 document.getElementById("admin"+id).remove();
             } else {
                 document.getElementById('lareponse').value="Error: returned status code " + req.status + " " + req.statusText;

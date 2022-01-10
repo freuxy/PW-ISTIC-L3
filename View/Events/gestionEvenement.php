@@ -19,6 +19,7 @@ if (!empty($_SESSION['admin'])) {
 <head>
     <title>login</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="../../js/gestion.js"></script>
     <script src="mortifierEvent.js"></script>
     <script src="checkForm.js"></script>

@@ -19,7 +19,7 @@ session_start();
 </head>
 <body class="p-8" > 
 
-<h1 class="md:font-bold mb-8">List des admins</h1>
+<h1 class="md:font-bold mb-8">Liste des admins</h1>
 <div id="lareponse"></div>
 <div id="admins" class="container">
     <div>

@@ -9,6 +9,7 @@ session_start();
 <head>
     <title>login</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/css">
         .afficherMode input{
             display: none;
@@ -28,9 +29,9 @@ session_start();
         }
     </script>
 </head>
-<body>
+<body class="p-8">
 
-<h1>List des artistes</h1>
+<h1 class="md:font-bold mb-8" >Liste des artistes</h1>
 <div id="lareponse"></div>
 <div id="artistes" class="container">
     <div>

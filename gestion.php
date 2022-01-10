@@ -175,8 +175,8 @@ noMagicQuotes();
             </a>
             <?php
             if (!empty($_SESSION['admin'])) {
-            echo "<p style='margin-right: 5px'>  Bonjour, " . $_SESSION['admin']->username ."</p>";
-            echo "<div><a href=".'user_logout.php'. "/>déconnecter</a></div>";
+            echo "<p class=' ml-8 mr-8 ' style='margin-right: 5px'>  Bonjour, " . $_SESSION['admin']->username ."</p>";
+            echo "<div class='inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#2D2E35] hover:bg-[#E4DE4B] hover:text-[#2D2E35] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2D2E35] ml-8 '><a href=".'user_logout.php'. "/>Se déconnecter</a></div>";
             }
             ?>
 

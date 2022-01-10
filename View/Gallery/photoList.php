@@ -11,6 +11,7 @@ noMagicQuotes();
 <head>
     <title>login</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script type="text/javascript" src="../../js/custom/utils.js"></script>
     <script type="text/javascript" src="../../js/custom/gallery.js"></script>
     <script>
@@ -28,7 +29,7 @@ noMagicQuotes();
     </script>
 
 </head>
-<body>
+<body class="md:font-bold mb-8">
 
 <h1>List des photos</h1>
 <div id="lareponse"></div>

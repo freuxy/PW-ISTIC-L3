@@ -11,6 +11,7 @@ noMagicQuotes();
 <head>
     <title>login</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="../../js/gestion.js"></script>
     <script src="checkForm.js"></script>
     <script>
@@ -25,7 +26,7 @@ noMagicQuotes();
         }
     </script>
 </head>
-<body>
+<body class="md:font-bold mb-8">
 <form action="" method="POST">
     <button type="button" onclick="afficheAddArtisteForm()">ajouter une photo</button>
 </form>
