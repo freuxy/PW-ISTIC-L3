@@ -34,14 +34,14 @@ class DAOArtiste
                         if($oeuvre!=null && $oeuvre!=""){
                             DAOArtiste::addOeuvre($id,$oeuvre);
                             if(DAOArtiste::addOeuvre($id,$oeuvre)){
-                                echo "reussir";
+                                echo "réussi";
                             }else{
                                 echo "error d'ajouter un oeuvre";
                             }
                         }
                     }
                 }else{
-                    echo "reussir";
+                    echo "réussi";
                     exit();
                 }
 

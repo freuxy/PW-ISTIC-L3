@@ -31,12 +31,12 @@ class DAOEvenement{
                 // Mis à jour l'artiste créée avec nom de fichier
                 $db->query("UPDATE evenement SET posteur = '" . $fileName ."' WHERE id = " . $id . ";");
 
-                echo "reussir";
+                echo " Modification reussie";
                 //header("Location:../../View/Events/evenementList.php");
                 exit();
             } else {
                 //die("Erreur SQLite (permission d'écriture sur le fichier et son répertoire ?) : $sql");
-                echo "error d'ajouter une evenement";
+                echo "erreur d'ajout une evenement";
             }
         }
     }

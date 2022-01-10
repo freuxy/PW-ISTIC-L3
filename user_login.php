@@ -8,10 +8,10 @@ if (!empty($_REQUEST['username']) && !empty($_REQUEST['mdp'])) {
     $sql = "SELECT * FROM Admin "
         ."WHERE username='".$_POST['username']."' AND mdp='".$_POST['mdp']."'";
 
-    if (!empty($db->query($sql)->fetchAll(PDO::FETCH_OBJ))) {
-        $_SESSION['admin'] = $db->query($sql)->fetchAll(PDO::FETCH_OBJ)[0];
+    if (!empty($db->query($sql)->fetch(PDO::FETCH_OBJ))) {
+        $_SESSION['admin'] = $db->query($sql)->fetch(PDO::FETCH_OBJ)[0];
         // redirection (syntaxe incorrecte, il faut normalement une URL complète)
-        //echo "reussir";
+        //echo "réussi";
         header('Location: gestion');
         exit();
     }else{

@@ -40,7 +40,7 @@ noMagicQuotes();
             </div> -->
 
             <div class="col-span-6 sm:col-span-3 md:font-bold content-img ">
-                  <label for="username" class="block text-sm font-medium text-gray-700">Télécharger la photo, supporte le format : jpg/png<span class="text-[#E4DE4B]">*</span></label>
+                  <label for="photo" class="block text-sm font-medium text-gray-700">Télécharger la photo, supporte le format : jpg/png<span class="text-[#E4DE4B]">*</span></label>
                   <input type="file" name="photo" accept="image/*" id="upload" class="block w-full text-sm text-gray-500
       file:mr-4 file:py-2 file:px-4
       file:rounded-full file:border-0

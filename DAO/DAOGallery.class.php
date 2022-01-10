@@ -24,7 +24,7 @@ class DAOGallery
 
             // Mis à jour l'artiste créée avec nom de fichier
             $db->query("UPDATE Gallery SET photo = '" . $fileName . "' WHERE id = " . $id . ";");
-            echo "reussir";
+            echo "réussi";
             //header("Location:../../View/Gallery/photoList.php");
             exit();
         } else {
