@@ -82,7 +82,7 @@ noMagicQuotes();
 
                                     <li class="menu-item">
                                         <a href="#" onclick="cliquerMenu(2)">
-                                            <span class="menu-title">Ajouter une Admin</span>
+                                            <span class="menu-title">Ajouter un Admin</span>
                                         </a>
                                     </li>
 
@@ -105,7 +105,7 @@ noMagicQuotes();
                                     </li>
                                     <li class="menu-item">
                                         <a href="#" onclick="cliquerMenu(4)">
-                                            <span class="menu-title">Ajouter une Artiste</span>
+                                            <span class="menu-title">Ajouter un Artiste</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -128,7 +128,7 @@ noMagicQuotes();
                                     </li>
                                     <li class="menu-item">
                                         <a href="#"  onclick="cliquerMenu(6)">
-                                            <span class="menu-title">Ajouter une événement</span>
+                                            <span class="menu-title">Ajouter un événement</span>
                                         </a>
                                     </li>
                                 </ul>
